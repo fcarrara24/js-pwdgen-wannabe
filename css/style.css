@@ -1,0 +1,4 @@
+#passContainer, #errorContainer{
+    padding-top: 20px;
+    display: none;
+}

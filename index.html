@@ -30,8 +30,14 @@
         <button type="button" class="btn btn-primary " onclick="sendData()">Invia</button>
     </form>
 
-    <span>la password che hai generato è: </span> <span id="generatedPassword"></span> <span>
-        mantienila segreta </span>
+    <div id="passContainer">
+        <span>la password che hai generato è: </span> <span id="generatedPassword" class="text-primary"></span> <span>
+            mantienila segreta </span>
+    </div>
+
+    <div id="errorContainer">
+        Si prega di compilare tutti i campi
+    </div>
 
     <script src="js/script.js"></script>
 </body>
