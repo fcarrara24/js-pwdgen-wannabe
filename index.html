@@ -11,32 +11,30 @@
 </head>
 
 <body>
-    <form>
-        <div class="form-group">
-
-
-            <input type="text" class="form-control info" id="name" placeholder="Inserire il proprio nome">
+    <div class="container">
+        <h1 class="p-3 text-capitalize text-center">generate Password</h1>
+        <form>
+            <div class="form-group">
+                <input type="text" class="form-control info" id="name" placeholder="Inserire il proprio nome">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control info" id="surname" placeholder="inserire il proprio cognome">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control info" id="colore"
+                    placeholder="inserire il proprio colore preferito">
+            </div>
+            <!-- changing type of button to submit to avoid page refresh -->
+            <button type="button" class="btn btn-primary " onclick="sendData()">Invia</button>
+        </form>
+        <div id="passContainer">
+            <span>la password che hai generato è: </span> <span id="generatedPassword" class="text-primary"></span>
+            <span>
+                mantienila segreta </span>
+        </div>
+        <div id="errorContainer">
 
         </div>
-        <div class="form-group">
-
-            <input type="text" class="form-control info" id="surname" placeholder="inserire il proprio cognome">
-        </div>
-        <div class="form-group">
-
-            <input type="text" class="form-control info" id="colore" placeholder="inserire il proprio colore preferito">
-        </div>
-        <!-- changing type of button to submit to avoid page refresh -->
-        <button type="button" class="btn btn-primary " onclick="sendData()">Invia</button>
-    </form>
-
-    <div id="passContainer">
-        <span>la password che hai generato è: </span> <span id="generatedPassword" class="text-primary"></span> <span>
-            mantienila segreta </span>
-    </div>
-
-    <div id="errorContainer">
-        Si prega di compilare tutti i campi
     </div>
 
     <script src="js/script.js"></script>
